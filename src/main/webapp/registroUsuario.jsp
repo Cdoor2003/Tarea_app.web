@@ -9,6 +9,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="estilos.css">
+  <script src="script.js" ></script>
   <title>Registro usuario</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
     <label>RUT: </label>
     <input name="rut" type="text" class="campoTexto">
     <br><br>
-    <input type="submit" value="enviar" class="boton">
+    <button class="animated-button" type="submit" onclick="animateButton()">Registrar</button>
   </div>
 </form>
 </body>

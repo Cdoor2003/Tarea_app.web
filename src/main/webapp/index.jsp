@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>Menu</title>
+  <script src="script.js" ></script>
   <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
@@ -10,8 +11,9 @@
 <br/>
 <form action="registroUsuario" method="get">
   <div class="centrado">
-    <button type="submit" value="Registrar" class="boton">Registrar</button>
+    <button class="animated-button" type="submit" onclick="animateButton()">Registrar</button>
   </div>
 </form>
 </body>
 </html>
+

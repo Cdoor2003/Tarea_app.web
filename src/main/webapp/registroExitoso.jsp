@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-<h1 class="encabezado">Se ha registrado correctamente al usuario a</h1>
+<h1 class="encabezado">Se ha registrado correctamente al usuario</h1>
 <h2 class="encabezado">${nombreUsuario}</h2>
+<img src="completado.svg">
 </body>
 </html>

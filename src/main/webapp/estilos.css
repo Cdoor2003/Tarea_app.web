@@ -1,28 +1,88 @@
+body{
+    background-color: darkcyan;
+}
+
 .encabezado{
     font-size: 300%;
     text-align: center;
-    font-family: "Arial Black"
+    font-family: "Arial Black";
+    color: floralwhite;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 .centrado{
     text-align: center;
     align-content: center;
     font-family: "Arial";
-    font-size: 150%
+    position: relative;
 }
 .subtitulo{
     text-align: center;
     font-family: "Arial Narrow";
-    font-size: 200%
+    font-size: 200%;
+    color: #921212;
 }
-.boton{
-    height: 5%;
-    width: fit-content;
-    color: darkgray;
-    font-size: 100%;
-    align-content: center;
-    margin: 0 auto;
+
+.animated-button {
+    padding: 10px 20px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
 }
+
+.animated-button.animate {
+    position: relative;
+    animation-name: pulseButton;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulseButton {
+    0% {
+
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.85);
+    }
+    50% {
+        transform: scale(0.7);
+    }
+    75%{
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover{
+    background-color: #a49b9b;
+}
+
 .campoTexto{
     width: 10%;
     height: 3%
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }
